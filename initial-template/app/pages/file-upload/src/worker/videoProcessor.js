@@ -11,7 +11,7 @@ export default class VideoProcessor {
     this.#mp4Demuxer = mp4Demuxer;
   }
 
-  /** @return {ReadableStream} */
+  /** @returns {ReadableStream} */
   mp4Decoder(encoderConfig, stream) {
     return new ReadableStream({
       start: async (controller) => {
